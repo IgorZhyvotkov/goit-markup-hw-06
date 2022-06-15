@@ -75,26 +75,26 @@
 
             <div class="form-field">
               <label class="form-label" for="name">Имя</label>
-              <input class="form-input" type="text" id="name" />
+              <input class="form-input" type="text" id="name" required />
               <svg class="form-icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-person-bl"></use>
               </svg>
             </div>
             <div class="form-field">
               <label class="form-label" for="tel">Телефон</label>
-              <input class="form-input" type="tel" id="tel" />
+              <input class="form-input" type="tel" id="tel" required />
               <svg class="form-icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-phone-bl"></use>
               </svg>
             </div>
             <div class="form-field">
-              <label class="form-label" for="mail">Почта</label>
-              <input class="form-input" type="email" id="mail" />
+              <label class="form-label" for="email">Почта</label>
+              <input class="form-input" type="email" id="email" required />
               <svg class="form-icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-email-bl"></use>
               </svg>
             </div>
-            <div class="form-field">
+            <div class="form-field form-area">
               <label class="form-label" for="coment">Комментарий</label>
               <textarea
                 class="form-input area"
@@ -106,7 +106,7 @@
               ></textarea>
             </div>
             <label class="check-label">
-              <input class="checkbox" type="checkbox" />
+              <input class="checkbox" type="checkbox" required />
               <span class="check-icon"> </span>
               <span>
                 Соглашаюсь с рассылкой и принимаю
@@ -490,26 +490,28 @@
             </li>
           </ul>
         </div>
-        <div class="footer-mailing">
-          <form class="mailing-form">
-            <label for="email" class="mail-label"
+
+        <form class="footer-mailing">
+          <div class="mailing-form">
+            <label for="mail" class="mail-label"
               >Подпишитесь на рассылку</label
             >
             <input
               type="email"
               name="email"
-              id="email"
+              id="mail"
               placeholder="E-mail"
               class="emeil-input"
+              required
             />
-          </form>
+          </div>
           <button type="submit" class="mailing-button">
             Подписаться
             <svg class="send-icon" width="24" height="24">
               <use href="./images/sprite.svg#icon-send"></use>
             </svg>
           </button>
-        </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
