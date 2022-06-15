@@ -389,6 +389,7 @@ p {
   background-size: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .form-button {
   padding: 10px 55px;
