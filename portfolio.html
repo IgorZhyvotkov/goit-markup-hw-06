@@ -321,25 +321,28 @@
             </li>
           </ul>
         </div>
-        <div class="footer-mailing">
-          <form class="mailing-form">
-            <label for="mail" class="mail-label">Подпишитесь на рассылку</label>
+
+        <form class="footer-mailing">
+          <div class="mailing-form">
+            <label for="mail" class="mail-label"
+              >Подпишитесь на рассылку</label
+            >
             <input
               type="email"
-              name="mail"
+              name="email"
               id="mail"
               placeholder="E-mail"
               class="emeil-input"
+              required
             />
-          </form>
+          </div>
           <button type="submit" class="mailing-button">
             Подписаться
             <svg class="send-icon" width="24" height="24">
-              <use href="./images/sprite.svg#icon-send"></use>              
+              <use href="./images/sprite.svg#icon-send"></use>
             </svg>
           </button>
-          
-        </div>
+        </form>
       </div>
     </footer>
   </body>
